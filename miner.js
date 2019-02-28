@@ -2,7 +2,7 @@ const MINE_1 = 3;
 const MINE_2 = 7;
 const MINE_3 = 9;
 
-var miner    = 1;
+var miner    = Math.round(Math.random()*10);
 
 function move_left(){
   miner--;
@@ -28,6 +28,7 @@ for (var step = 1 ; step<=10; step++){
       ${content}
     </div>`
   ;
+
 }
 }
 show();
